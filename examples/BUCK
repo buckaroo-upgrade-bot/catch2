@@ -1,0 +1,19 @@
+cxx_binary(
+  name = 'catch-main', 
+  srcs = [
+    '000-CatchMain.cpp', 
+  ], 
+  deps = [
+    '//:catch', 
+  ], 
+)
+
+cxx_binary(
+  name = 'test-case', 
+  srcs = [
+    '010-TestCase.cpp', 
+  ], 
+  deps = [
+    '//:catch', 
+  ], 
+)
